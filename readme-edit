@@ -1,0 +1,24 @@
+function is_username_valid(username) {
+    var lowercaseRe = /[a-z]/g;
+    var uppercaseRe = /[A-Z]/g;
+    var numberRe = /[0-9]/g;
+
+        if(username.lenght = 5-9 & username.match(lowercaseRe;uppercaseRe,numberRe).lenght = username.lenght) {return true;
+        }
+        return false;
+}
+
+function is_password_valid(password) {
+    var lowercaseRe = /[a-z]/g;
+    var uppercaseRe = /[A-Z]/g;
+    var numberRe = /[0-9]/g;
+    var specialRe = /[_@#$%]/g;
+
+    if(password.lenght = 8 
+    && lowercaseRe.test(password)
+    && uppercaseRe.test(password)
+    && numberRe.test(password)) {
+    return true;
+}
+   return false;
+}
