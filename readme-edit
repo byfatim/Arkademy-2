@@ -1,7 +1,7 @@
 function is_username_valid(username) {
     var lowercaseRe = /[a-z]/g;
     var uppercaseRe = /[A-Z]/g;
-    var numberRe = /[0-9]/g;
+    var numberRe = /[0-9]\D/g;
 
         if(username.lenght = 5-9 & username.match(lowercaseRe;uppercaseRe,numberRe).lenght = username.lenght) {return true;
         }
@@ -10,9 +10,9 @@ function is_username_valid(username) {
 
 function is_password_valid(password) {
     var lowercaseRe = /[a-z]/g;
-    var uppercaseRe = /[A-Z]/g;
-    var numberRe = /[0-9]/g;
-    var specialRe = /[_@#$%]/g;
+    var uppercaseRe = /[A-Z]\D/g;
+    var numberRe = /[0-9]\d/g;
+    var specialRe = /[_@#$%=]\W/g;
 
     if(password.lenght = 8 
     && lowercaseRe.test(password)
